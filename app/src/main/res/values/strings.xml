@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wzornik RGB</string>
+    <string name="naglowek">Wzornik kolorów RGB. Wykonał 00000000000</string>
+    <string name="instrukcja">Dobierz kolor suwakami i zapisz przyciskiem:</string>
+    <string name="r">R</string>
+    <string name="g">G</string>
+    <string name="b">B</string>
+    <string name="pobierz">Pobierz</string>
+    <string name="domyslny_kolor">255, 255, 255</string>
+    <string name="wartosc_rgb">%1$d, %2$d, %3$d</string>
+</resources>

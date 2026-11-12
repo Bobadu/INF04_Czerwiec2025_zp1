@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1E6BE"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        android:text="@string/naglowek"
+        android:textColor="#3B3B3B"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <View
+            android:id="@+id/duzyProstokat"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/prostokat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/instrukcja"
+            android:textColor="#3B3B3B"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="@string/r"
+                android:textColor="#3B3B3B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/suwakR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="#E53935"
+                android:thumbTint="#E53935" />
+
+            <TextView
+                android:id="@+id/wartoscR"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="#3B3B3B"
+                android:textSize="18sp"
+                tools:text="255" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="@string/g"
+                android:textColor="#3B3B3B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/suwakG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="#43A047"
+                android:thumbTint="#43A047" />
+
+            <TextView
+                android:id="@+id/wartoscG"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="#3B3B3B"
+                android:textSize="18sp"
+                tools:text="255" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textColor="#3B3B3B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/suwakB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="255"
+                android:progressTint="#1E88E5"
+                android:thumbTint="#1E88E5" />
+
+            <TextView
+                android:id="@+id/wartoscB"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="#3B3B3B"
+                android:textSize="18sp"
+                tools:text="255" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/przyciskPobierz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#CD853F"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/pobierz"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:cornerRadius="6dp" />
+
+        <TextView
+            android:id="@+id/malyProstokat"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/prostokat"
+            android:gravity="center"
+            android:text="@string/domyslny_kolor"
+            android:textColor="#3B3B3B"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
